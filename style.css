@@ -1,37 +1,10 @@
-main {
-    display: flex;
-    flex-direction: column;
-    width: max(20%, 20rem);
-    background-color: hsl(216, 50%, 16%);
-    height: auto;
-    margin: 0 auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    text-align: center;
-    border-radius: 20px;
-    margin-top: 9.37rem;
-    margin-bottom: 9.37rem;
-}
-
-body {
-    height: 100vh;
-    background-color: hsl(217, 54%, 11%);
-    margin: 0;
-    font-size: 18px;
-    font-family: 'Outfit', sans-serif;
-}
-
 .div-txt {
     text-align: left;
     padding: 5%;
     padding-top: 0;
 }
 
-.div-txt h1 {
-    font-size: 1.4rem;
-    color: white;
-    cursor: pointer;
-}
+
 
 .div-txt h1:hover {
     color: hsl(178, 100%, 50%);
@@ -48,9 +21,10 @@ body {
     flex-direction: initial;
 }
 
+
 .div-txt ul li p {
     margin: 0;
-    margin-left: 7px;
+    margin-left: .5vw;
 }
 
 .div-txt p {
@@ -68,56 +42,18 @@ body {
 
 .div-img {
     width: 100%;
-    position: relative;
+    position: relative
 }
 
-.div-img div {
-    width: 90%;
-    margin-left: 5%;
-    margin-top: 5%;
-    position: absolute;
-    height: max(93.5%, 17rem);
-    top: 0;
-    background-color: hsl(178deg 100% 50% / 41%);
-    border-radius: 10px;
-    opacity: 0%;
-    cursor: pointer;
-}
 
-.div-img .img1 {
-    width: 90%;
-    margin-top: 5%;
-    border-radius: 10px;
-}
-
-.div-img .img2 {
-    margin-top: 40%;
-}
 
 .div-img div:hover {
     opacity: 100%;
 }
 
-.div-profile {
-    display: inline-flex;
-    flex-direction: initial;
-    padding: 0;
-    margin-left: 5%;
-    margin-top: -1rem;
-    padding-bottom: 5%;
-    width: 90%;
-    box-shadow: 0px -2px 0px -1px hsl(215, 32%, 27%);
-}
 
-.div-profile img {
-    width: 2rem;
-    height: 2rem;
-    vertical-align: middle;
-    margin-top: 0.8rem;
-    border: 1px solid white;
-    border-radius: 2rem;
-    margin-right: 15px;
-}
+
+
 
 .p1 {
     color: hsl(215, 51%, 70%);
@@ -125,7 +61,7 @@ body {
 
 .p2 {
     color: white;
-    margin-left: 5px;
+    margin-left: .1vw;
     cursor: pointer;
 }
 
@@ -136,4 +72,152 @@ body {
 footer {
     width: 100%;
     text-align: center;
+}
+
+@media (min-width:200px) {
+    main {
+        background-color: hsl(216, 50%, 16%);
+        height: auto;
+        border-radius: 1rem;
+        margin: auto;
+        width: 85vw;
+    }
+
+    body {
+        background-color: hsl(217, 54%, 11%);
+        font-size: 1-1rem;
+        font-family: 'Outfit', sans-serif;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .div-txt h1 {
+        font-size: 1.4rem;
+        color: white;
+        cursor: pointer;
+    }
+
+    .div-txt ul li img {
+        width: 1rem
+    }
+
+    .div-profile img {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin-top: 0.5vw;
+        border: 0.1vw solid white;
+        border-radius: 3rem;
+        margin-right: 1vw;
+    }
+
+    .div-profile {
+        width: 90%;
+        box-shadow: 0px -3px 0px 0px hsl(215, 32%, 27%);
+        margin: 0 0 5% 5%;
+        display: inline-flex;
+        padding-top: 5%;
+    }
+
+    .div-img div {
+        width: 90%;
+        position: absolute;
+        top: 0;
+        background-color: hsl(178deg 100% 50% / 41%);
+        border-radius: 1rem;
+        opacity: 0%;
+        cursor: pointer;
+        height: 89%;
+        margin: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-img .img1 {
+        width: 90%;
+        border-radius: 1rem;
+        margin: 5%;
+    }
+
+    .img2 {
+        width: 3.1rem;
+    }
+}
+
+@media (min-width:900px) {
+    main {
+        background-color: hsl(216, 50%, 16%);
+        height: auto;
+        border-radius: 1vw;
+        margin: auto;
+        width: 22vw;
+    }
+
+    body {
+        background-color: hsl(217, 54%, 11%);
+        font-size: 1.1vw;
+        font-family: 'Outfit', sans-serif;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .div-txt h1 {
+        font-size: 1.4VW;
+        color: white;
+        cursor: pointer;
+    }
+
+    .div-txt ul li img {
+        width: 1vw
+    }
+
+    .div-profile img {
+        width: 2.5vw;
+        height: 2.5vw;
+        margin-top: 0.5vw;
+        border: 0.1vw solid white;
+        border-radius: 3vw;
+        margin-right: 1vw;
+    }
+
+    .div-profile {
+        width: 90%;
+        box-shadow: 0 -.2vw 0 0vw hsl(215, 32%, 27%);
+        margin: 0 0 5% 5%;
+        display: inline-flex;
+        padding-top: 5%;
+    }
+
+    .div-img div {
+        width: 90%;
+        position: absolute;
+        top: 0;
+        background-color: hsl(178deg 100% 50% / 41%);
+        border-radius: 1vw;
+        opacity: 0%;
+        cursor: pointer;
+        height: 89%;
+        margin: 5%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-img .img1 {
+        width: 90%;
+        border-radius: 1vw;
+        margin: 5%;
+    }
+
+    .img2 {
+        width: 3.1vw;
+    }
 }
