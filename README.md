@@ -1,5 +1,5 @@
 # nft-preview-card-component-main
-nft-preview-card-component-main CHALLENGE
+nft-preview-card-component-main CHALLENGE finalizado ☑
 
 # Project Link :
 https://jank1510.github.io/nft-preview-card-component-main/
